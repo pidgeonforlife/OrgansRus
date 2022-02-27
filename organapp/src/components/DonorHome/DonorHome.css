@@ -28,6 +28,10 @@
     margin-bottom: 30px;
 }
 
+.donorTopDesc p {
+    margin-top: 10px;
+    font-weight: 400;
+}
 .recipientDiv {
     width: 366px;
     height: 162px;
@@ -79,6 +83,14 @@
     top: 3px;
     width: 14px;
     height: 14px;
+}
+
+.donorExampleContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 403px;
 }
 
 

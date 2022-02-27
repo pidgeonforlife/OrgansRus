@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registration from "./pages/Registration";
 import DonorHomePage from "./pages/DonorHomePage";
+import DonorExample from "./pages/DonorExample";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route exact path="/register" element={<Registration />} />
           <Route exact path="/donorHomePage" element={<DonorHomePage />} />
+          <Route exact path="/donorExample" element={<DonorExample />} />
         </Routes>
       </Router>
     </div>
