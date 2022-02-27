@@ -13,8 +13,7 @@ export class FormUserDetails extends Component {
     return (
         <div className='userFormBackground'>
         <div className='userFormTop'>
-          <img />
-          <h1>PeerOrgan</h1>
+          <img src='./images/PeeorOrganLogo2.png' />
           <p>Contribute and help save your own or somebody's life!</p>
         </div>
         <div className='userFormContainer'>
@@ -34,7 +33,7 @@ export class FormUserDetails extends Component {
             <label>
               <input
                 type='text'
-                placeholder='Enter Your Pasword' 
+                placeholder='Enter Your Password' 
                 defaultValue={values.password}
                 onChange={handleChange('firstName')}
               />
@@ -56,7 +55,7 @@ export class FormUserDetails extends Component {
             <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} onClick={this.continue}>
               Continue
             </motion.button>
-            <p>Already a member? Login</p>
+            <p>Already a member? <a href>Login</a></p>
         </div>
         </div>
     );

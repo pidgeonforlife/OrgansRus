@@ -33,16 +33,16 @@ export class DonorOrRecepient extends Component {
                 <p>Do you want to become a donor or a recepient?</p>
                 <div className='buttoncontainer'>
                 <div className='donor'>
-                  <button onClick={this.continue}>
+                  <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} onClick={this.continue}>
                       Donor
                       <img src='./images/donor.png' />
-                  </button>
+                  </motion.button>
                 </div>
                 <div className='recepient'>
-                  <button>
+                  <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                       Recipient
                       <img src='/images/recipient.png' />
-                  </button>
+                  </motion.button>
                 </div>
                 </div>
               </motion.div>
