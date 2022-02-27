@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion'
-import './UserForm.css'
+import '../UserForm.css'
 
 
 export class RecepientOrDonor extends Component {
@@ -33,13 +33,13 @@ export class RecepientOrDonor extends Component {
                 <p>Do you want to become a donor or a recepient?</p>
                 <div className='buttoncontainer'>
                 <div className='donor'>
-                  <button onClick={this.continue}>
+                  <button>
                       Donor
                       <img src='./images/donor.png' />
                   </button>
                 </div>
                 <div className='recepient'>
-                  <button>
+                  <button onClick={this.continue}>
                       Recipient
                       <img src='/images/recipient.png' />
                   </button>

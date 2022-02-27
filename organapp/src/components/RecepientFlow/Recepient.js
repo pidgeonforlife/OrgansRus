@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import FormUserDetails from './FormUserDetails';
+import FormUserDetails from '../FormUserDetails';
 import RecepientOrDonor from './RecepientOrDonor';
 import RecepientName from './RecepientName';
 import RecepientOrgan from './RecepientOrgan';
 import RecepientBlood from './RecepientBlood';
-import DonorBirthdate from './DonorBirthdate';
-import DonorQuestion2 from './DonorQuestion2';
-import DonorQuestion3 from './DonorQuestion3';
-import DonorQuestion4 from './DonorQuestion4';
+import RecepientStory from './RecepientStory';
 // import FormPersonalDetails from './FormPersonalDetails';
 // import Confirm from './Confirm';
 // import Success from './Success';
 
-export class UserForm extends Component {
+export class RecepientFlow extends Component {
   state = {
     step: 1,
     password: '',
@@ -97,7 +94,7 @@ export class UserForm extends Component {
               );
               case 6:
                 return (
-                  <DonorQuestion4
+                  <RecepientStory
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
                     values={values}
@@ -108,4 +105,4 @@ export class UserForm extends Component {
   }
 }
 
-export default UserForm;
+export default RecepientFlow;

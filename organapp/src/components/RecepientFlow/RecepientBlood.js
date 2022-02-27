@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion'
-import './UserForm.css'
+import '../UserForm.css'
 
 
 export class RecepientBlood extends Component {

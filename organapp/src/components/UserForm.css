@@ -226,3 +226,30 @@
 #question4 {
     margin-top: 112px;
 }
+
+#recepientContainer img {
+    width: 400px;
+}
+
+.descriptionRecepient {
+    width: 380px;
+    height: 169px;
+    border: 0.8px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+}
+
+.titleRecepient {
+    width: 380px;
+    height: 41px;
+    padding-left: 10px;
+    border: 0.8px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.pContainerY {
+    margin-top: 150px;
+}
