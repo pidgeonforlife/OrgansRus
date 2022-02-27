@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion} from 'framer-motion';
 import './UserForm.css'
 
 
@@ -26,7 +27,9 @@ export class DonorQuestion4 extends Component {
               <div className='progress'>
                   <img src='./images/progressbar5.png' />
               </div>
-              <div id='question4' className='topChooseContainer'>
+              <motion.div initial={{ x: 200, opacity: 0 }}
+            transition={{ delay: 0.2}}
+            animate={{ x: 0, opacity: 1 }} id='question4' className='topChooseContainer'>
                   <p id='pSizing'>Almost done! Let's some more details about your health.</p>
                   <div className='ratingContainer'>
                   <div className='Rating'>
@@ -73,9 +76,10 @@ export class DonorQuestion4 extends Component {
                       
                   </div>
                   </div>
-              </div>
+              </motion.div>
               <div className='Continue'>
-                  <button onClick={this.continue}>Continue</button>
+                  <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} 
+                  onClick={this.continue}>Continue</motion.button>
               </div>
           </div>
       );

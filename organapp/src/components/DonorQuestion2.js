@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 import './UserForm.css'
 
 
@@ -26,7 +27,9 @@ export class DonorQuestion2 extends Component {
               <div className='progress'>
                   <img src='./images/progressbar3.png' />
               </div>
-              <div className='topChooseContainer'>
+              <motion.div initial={{ x: 200, opacity: 0 }}
+            transition={{ delay: 0.2}}
+            animate={{ x: 0, opacity: 1 }} className='topChooseContainer'>
                   <p id='pSizing'>When Are You Looking to Donate?</p>
                   <form>
                       <select>
@@ -40,7 +43,7 @@ export class DonorQuestion2 extends Component {
                           <option value='Blood'>Blood</option>
                       </select>
                   </form>
-              </div>
+              </motion.div>
               <div className='Continue'>
                   <button onClick={this.continue}>Continue</button>
               </div>

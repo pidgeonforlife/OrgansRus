@@ -1,0 +1,84 @@
+.donorHomeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donorTop {
+    width: 366px;
+    margin-top: 60px;
+}
+
+.donorList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.donorTopTitle img {
+    width: 300;
+    height: 35px;
+}
+
+.donorTopDesc {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.recipientDiv {
+    width: 366px;
+    height: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 104, 84, 0.03);
+    border: 0.5px solid #2d927b;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.recipientImg img {
+    width: 120px;
+    height: 128px;
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+.recipientDescription {
+    margin-left: 10px;
+}
+
+.recipientDescription p {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 9px;
+    width: 195px; 
+
+}
+
+.recipientDescription a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #146854;
+}
+
+#smaller {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+#down {
+    position: relative;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+}
+
+

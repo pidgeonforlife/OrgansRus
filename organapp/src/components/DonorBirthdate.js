@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 import './UserForm.css'
 
 
@@ -26,7 +27,9 @@ export class DonorBirthdate extends Component {
               <div className='progress'>
                   <img src='./images/progressbar2.png' />
               </div>
-              <div className='topChooseContainer'>
+              <motion.div initial={{ x: 200, opacity: 0 }}
+            transition={{ delay: 0.2}}
+            animate={{ x: 0, opacity: 1 }} className='topChooseContainer'>
                   <p id='pSizing'>When's your Birthday?</p>
                   <div className='inputContainerB'>
                   <input type='text'
@@ -36,7 +39,7 @@ export class DonorBirthdate extends Component {
                   <input id='resizeButton' type='text'
                   placeholder='YYYY' />
                   </div>
-              </div>
+              </motion.div>
               <div className='Continue'>
                   <button onClick={this.continue}>Continue</button>
               </div>

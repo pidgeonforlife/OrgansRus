@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion} from 'framer-motion';
 import './UserForm.css'
 
 export class FormUserDetails extends Component {
@@ -52,9 +53,9 @@ export class FormUserDetails extends Component {
             </div>
         </div>
         <div className='userFormBottom'>
-            <button onClick={this.continue}>
+            <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} onClick={this.continue}>
               Continue
-            </button>
+            </motion.button>
             <p>Already a member? Login</p>
         </div>
         </div>

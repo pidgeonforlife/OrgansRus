@@ -4,9 +4,9 @@ import DonorBirthdate from './DonorBirthdate';
 import DonorQuestion2 from './DonorQuestion2';
 import DonorQuestion3 from './DonorQuestion3';
 import DonorQuestion4 from './DonorQuestion4';
-import FormPersonalDetails from './FormPersonalDetails';
-import Confirm from './Confirm';
-import Success from './Success';
+// import FormPersonalDetails from './FormPersonalDetails';
+// import Confirm from './Confirm';
+// import Success from './Success';
 import { DonorOrRecepient } from './DonorOrRecepient';
 
 export class UserForm extends Component {
@@ -20,6 +20,8 @@ export class UserForm extends Component {
     city: '',
     bio: ''
   };
+
+  
 
   // Proceed to next step
   nextStep = () => {
@@ -98,18 +100,17 @@ export class UserForm extends Component {
                     values={values}
                   />
                 );    
-      case 7:
-        return (
-          <Confirm
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            values={values}
-          />
-        );
-      case 8:
-        return <Success />;
+      // case 7:
+      //   return (
+      //     <Confirm
+      //       nextStep={this.nextStep}
+      //       prevStep={this.prevStep}
+      //       values={values}
+      //     />
+      //   );
+      // case 8:
+      //   return <Success />;
       default:
-        (console.log('This is a multi-step form built with React.'))
     }
   }
 }
