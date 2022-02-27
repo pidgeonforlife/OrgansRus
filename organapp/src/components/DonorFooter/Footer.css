@@ -9,6 +9,7 @@
     box-sizing: border-box;
     align-items: center;
     gap: 44px;
+    margin-top: 65px;
 }
 .footerContainer img {
     width: 33px;
